@@ -14,18 +14,19 @@ elif opperation == "-":
     print (first_number-secound_number)
 elif opperation =="/":
     print (first_number/secound_number)
+else:
+    print('operation not valid')
 
-    bus_capcity=(11)
-    people_inbus= int(input("enter the number of people who wants to ride the bus"))
-    waiting= int(input("how many people are waiting?"))
+bus_capcity=(11)
+people_inbus= int(input("enter the number of people who wants to ride the bus"))
+waiting= int(input("how many people are waiting?"))
 
 
-    empty_seats= bus_capcity - people_inbus
+empty_seats= bus_capcity - people_inbus
 
- if empty_seats <= waiting :
+if empty_seats <= waiting :
    print (f'there are empty_seats {empty_seats}')
-
-elif empty_seats < people_inbus :
+else:
     print("opps the bus is full")
 
   
